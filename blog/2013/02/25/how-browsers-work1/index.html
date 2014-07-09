@@ -1,1095 +1,110 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[ithans]]></title>
-  <link href="http://www.ithans.com/atom.xml" rel="self"/>
-  <link href="http://www.ithans.com/"/>
-  <updated>2013-12-08T23:07:58+08:00</updated>
-  <id>http://www.ithans.com/</id>
-  <author>
-    <name><![CDATA[邵寒超]]></name>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>浏览器的工作原理：新式网络浏览器幕后揭秘[转] - ithans</title>
+  <meta name="author" content="邵寒超">
+
+  
+  <meta name="description" content="浏览器的工作原理：新式网络浏览器幕后揭秘">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.ithans.com/blog/2013/02/25/how-browsers-work1/">
+  <link href="http://ithans.u.qiniudn.com/favicon.ico" rel="icon">
+  <link href="http://ithans.u.qiniudn.com/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="http://ithans.u.qiniudn.com/ithansmodernizr-2.0.js"></script>
+  <script src="http://ithans.u.qiniudn.com/ithansender.js"></script>
+  <script src="http://ithans.u.qiniudn.com/ithansoctopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="ithans" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38571488-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">ithans</a></h1>
+  
+    <h2>Float on the sea</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.ithans.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about">About</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/tags">Tags</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
     
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+      <h1 class="entry-title">浏览器的工作原理：新式网络浏览器幕后揭秘[转]</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
 
   
-  <entry>
-    <title type="html"><![CDATA[five-safari-chrome-shortcuts]]></title>
-    <link href="http://www.ithans.com/blog/2013/12/08/five-safari-chrome-shortcuts/"/>
-    <updated>2013-12-08T22:38:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/12/08/five-safari-chrome-shortcuts</id>
-    <content type="html"><![CDATA[<p>键盘流都喜欢用快捷键，浏览器当然也不例外。</p>
 
-<p>以下是chomium系列的快捷键，windows下，把<code>command</code>替换成<code>Ctrl</code></p>
 
-<p><code>command+L</code>   前往URL地址栏，填写新的网址或进行搜索</p>
+<time datetime="2013-02-25T00:00:00+08:00" pubdate data-updated="true">Feb 25<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
 
-<p><code>command+T</code>   开启新的浏览器标签页</p>
 
-<p><code>command+W</code>     关闭当前标签页</p>
-
-<p><code>command+R</code>   刷新当前标签页</p>
-
-<p><code>command+.</code>   停止载入当前标签页</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[iframe-size-not-work-in-IOS]]></title>
-    <link href="http://www.ithans.com/blog/2013/11/27/iframe-size-not-work-in-ios/"/>
-    <updated>2013-11-27T10:02:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/11/27/iframe-size-not-work-in-ios</id>
-    <content type="html"><![CDATA[<p>最近遇到一个问题，就是iFrame在iPad上展示的时候，宽度并没有固定，会直接超出，通过嵌套div之后，无法滚动。</p>
-
-<p>HTML</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;frame_holder&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">&quot;my_frame&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    // The content
-</span><span class='line'>  <span class="nt">&lt;/iframe&gt;</span>
-</span><span class='line'><span class="nt">&lt;/div&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>CSS</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">body</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">background</span><span class="o">:</span> <span class="m">#f0f0f0</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nc">.frame_holder</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">top</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">bottom</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">left</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">right</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">background</span><span class="o">:</span> <span class="m">#ffffff</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nc">.my_frame</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#e0e0e0</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>例子：</p>
-
-<p><a href="http://jsfiddle.net/R3PKB/2/">http://jsfiddle.net/R3PKB/2/</a></p>
-
-<p>可以在你的iPad上去看看这个页面</p>
-
-<p><a href="http://jsfiddle.net/R3PKB/2/embedded/result">http://jsfiddle.net/R3PKB/2/embedded/result</a></p>
-
-<p>解决方案是：</p>
-
-<p>在外层的<code>div</code>上添加<code>overflow:auto</code>和<code>-webkit-overflow-scrolling:touch</code>就可以了。</p>
-
-<p><a href="http://jsfiddle.net/R3PKB/7/">http://jsfiddle.net/R3PKB/7/</a></p>
-
-<p>参考链接：</p>
-
-<ul>
-<li><p><a href="http://stackoverflow.com/questions/16937070/iframe-size-with-css-on-ios">http://stackoverflow.com/questions/16937070/iframe-size-with-css-on-ios</a></p></li>
-<li><p><a href="http://stackoverflow.com/questions/6139564/iframe-size-on-ipad/6721310#6721310">http://stackoverflow.com/questions/6139564/iframe-size-on-ipad/6721310#6721310</a></p></li>
-<li><p><a href="http://stackoverflow.com/questions/9814256/iframe-on-ios-ipad-content-cropping-issue">http://stackoverflow.com/questions/9814256/iframe-on-ios-ipad-content-cropping-issue</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[zsh下rake new_post["title"] 报错的问题]]></title>
-    <link href="http://www.ithans.com/blog/2013/11/27/use-octopress-new-post-function-with-zsh/"/>
-    <updated>2013-11-27T09:38:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/11/27/use-octopress-new-post-function-with-zsh</id>
-    <content type="html"><![CDATA[<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">rake</span> <span class="n">new_post</span><span class="p">[</span><span class="s">&quot;title&quot;</span><span class="p">]</span>
-</span><span class='line'><span class="nf">zsh</span><span class="kt">:</span> <span class="n">no</span> <span class="n">matches</span> <span class="n">found</span><span class="kt">:</span> <span class="n">new_post</span><span class="p">[</span><span class="n">title</span><span class="p">]</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>在<code>zsh</code>中使用<code>rake new_post</code>的时候抛出找不到匹配的异常，原因是</p>
-
-<p><a href="http://zsh.sourceforge.net/Doc/Release/Expansion.html#Filename-Generation">zsh官方文档</a>中有这样的说明：</p>
-
-<blockquote><p>If a word contains an unquoted instance of one of the characters ‘*’, ‘(’, ‘|’, ‘&lt;’, ‘[’, or ‘?’, it is regarded as a pattern for filename generation, unless the GLOB option is unset. If the EXTENDED_GLOB option is set, the ‘^’ and ‘#’ characters also denote a pattern; otherwise they are not treated specially by the shell.</p></blockquote>
-
-<p>所以，解决方案就是通过加上noglob去取消通配符匹配</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">alias </span><span class="nv">rake</span><span class="o">=</span><span class="s2">&quot;noglob rake&quot;</span>
-</span><span class='line'><span class="nb">source</span> ~/.zshrc
-</span></code></pre></td></tr></table></div></figure>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[周末有感]]></title>
-    <link href="http://www.ithans.com/blog/2013/07/28/weekend-thinking/"/>
-    <updated>2013-07-28T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/07/28/weekend-thinking</id>
-    <content type="html"><![CDATA[<p>今天晚上跟女朋友去UME看了《速度与激情6》，很精彩。（那边的饮料真是坑，12块钱一瓶）</p>
-
-<p>回来的路上，两人谈论起我喜欢的美国大片和她喜欢的感情戏。结果是，我觉得她说的话还是比较有道理的，她是这么说的：</p>
-
-<blockquote><p>我看的电视剧改变了我很多，一些人生观价值观的东西，人生并不是为了一个目标而或者，并不是说，你赚到一个亿的时候才是你开心的时候，其他的时间都不开心，就算你真的赚到你一个亿了，你还是失去了之前的快乐。无论我们工作、学习，都是为了更加快乐的生活。</p></blockquote>
-
-<p>“人生得意须尽欢，莫使金樽空对月”，再回想之前外包转正面试失败这件事情，其实未必也不是件好事，这次面试，认识了很多新的东西，知道自己有很多不足的地方，得到了一些前辈的指点，收获很大。结果，有时候往往是顺路而来的。</p>
-
-<p>今天凌晨看了《精忠岳飞》的63，64集，岳飞征战一身，最后还是因为皇帝的疑心和嫉妒以及秦桧的谗言，白白葬送了十余年的胜利。《满江红·怒发冲冠》中有一句“莫等闲，白了少年头，空悲切”，很喜欢，也很心痛。</p>
-
-<hr />
-
-<p>伊泽<br/>
-2013-07-28于杭州</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Javascript 折半搜索法（二分法）]]></title>
-    <link href="http://www.ithans.com/blog/2013/07/28/javascript-binary-search/"/>
-    <updated>2013-07-28T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/07/28/javascript-binary-search</id>
-    <content type="html"><![CDATA[<p>周末，写个简单的算法。</p>
-
-<p>JS二分法：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">binarySearch</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">l</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">h</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">while</span> <span class="p">(</span><span class="nx">l</span><span class="o">&lt;=</span> <span class="nx">h</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="kd">var</span> <span class="nx">m</span> <span class="o">=</span> <span class="nx">l</span> <span class="o">+</span> <span class="p">((</span><span class="nx">h</span> <span class="o">-</span> <span class="nx">l</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="p">);</span>
-</span><span class='line'>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;l@%s,h@%s,m@%s&#39;</span><span class="p">,</span> <span class="nx">l</span><span class="p">,</span> <span class="nx">h</span><span class="p">,</span> <span class="nx">m</span><span class="p">);</span>
-</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">m</span><span class="p">]</span> <span class="o">===</span> <span class="nx">v</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>          <span class="k">return</span> <span class="nx">m</span><span class="p">;</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">m</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">v</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>          <span class="nx">h</span> <span class="o">=</span> <span class="nx">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-</span><span class='line'>      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>          <span class="nx">l</span> <span class="o">=</span> <span class="nx">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">return</span> <span class="o">-</span><span class="p">(</span><span class="nx">l</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>使用：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">2312</span><span class="p">,</span> <span class="mi">424</span><span class="p">];</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">arr</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">return</span> <span class="nx">x</span> <span class="o">-</span> <span class="nx">y</span><span class="p">;</span>
-</span><span class='line'><span class="p">})</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">binarySearch</span><span class="p">(</span><span class="mi">424</span><span class="p">));</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>说明：</p>
-
-<p><code>var m = l + ((h - l) &gt;&gt; 1);</code>，为什么要用位运算？</p>
-
-<p>其实用<code>var m = Math.floor((h+l)/2);</code>也是可以的，但是位运算的速度优于除法，并且还要再进行一次Math.floor。用位运算主要是出于性能考虑。<code>h+l</code>还存在溢出的问题，不过这个在web端应该不会遇到。。。Node.js就有可能了。</p>
-
-<p>还有个复杂度的问题，下回再分析。</p>
-
-<hr />
-
-<p>伊泽<br/>
-2013-07-29于杭州</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[node.js Connection lost The server closed the connection.]]></title>
-    <link href="http://www.ithans.com/blog/2013/07/07/mysql-connection-lost/"/>
-    <updated>2013-07-07T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/07/07/mysql-connection-lost</id>
-    <content type="html"><![CDATA[<h3>mysql模块</h3>
-
-<p>今天访问了下内网的一台服务器，发现挂掉了，SSH上去看了下<code>nohup.out</code>,发现报错了</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">events</span><span class="o">.</span><span class="n">js</span><span class="kt">:</span><span class="mi">71</span>
-</span><span class='line'>        <span class="n">throw</span> <span class="n">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span> <span class="o">//</span> <span class="kt">Unhandled</span> <span class="n">&#39;error&#39;</span> <span class="n">event</span>
-</span><span class='line'>                       <span class="o">^</span>
-</span><span class='line'><span class="kt">Error:</span> <span class="kt">Connection</span> <span class="n">lost</span><span class="kt">:</span> <span class="kt">The</span> <span class="n">server</span> <span class="n">closed</span> <span class="n">the</span> <span class="n">connection</span><span class="o">.</span>
-</span><span class='line'>    <span class="n">at</span> <span class="kt">Protocol</span><span class="o">.</span><span class="n">end</span> <span class="p">(</span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">utci</span><span class="o">/</span><span class="n">node_modules</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">protocol</span><span class="o">/</span><span class="kt">Protocol</span><span class="o">.</span><span class="n">js</span><span class="kt">:</span><span class="mi">73</span><span class="kt">:</span><span class="mi">13</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">at</span> <span class="kt">Socket</span><span class="o">.</span><span class="n">onend</span> <span class="p">(</span><span class="n">stream</span><span class="o">.</span><span class="n">js</span><span class="kt">:</span><span class="mi">66</span><span class="kt">:</span><span class="mi">10</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">at</span> <span class="kt">Socket</span><span class="o">.</span><span class="kt">EventEmitter</span><span class="o">.</span><span class="n">emit</span> <span class="p">(</span><span class="n">events</span><span class="o">.</span><span class="n">js</span><span class="kt">:</span><span class="mi">126</span><span class="kt">:</span><span class="mi">20</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">at</span> <span class="kt">TCP</span><span class="o">.</span><span class="n">onread</span> <span class="p">(</span><span class="n">net</span><span class="o">.</span><span class="n">js</span><span class="kt">:</span><span class="mi">417</span><span class="kt">:</span><span class="mi">51</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>这个错误的大概意思就是，未处理的<code>error</code>事件</p>
-
-<p>原因是：mysql的连接久了以后，超时了。</p>
-
-<p>解决方法是：</p>
-
-<p>增加<code>error</code>事件的监听</p>
-
-<p>database.js:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">mysql</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;mysql&#39;</span><span class="p">),</span>
-</span><span class='line'>    <span class="nx">settings</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;../settings&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="p">.</span><span class="nx">getConnection</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">((</span><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="p">.</span><span class="nx">connection</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">_socket</span><span class="p">)</span>
-</span><span class='line'>        <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">_socket</span><span class="p">.</span><span class="nx">readable</span><span class="p">)</span>
-</span><span class='line'>        <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">_socket</span><span class="p">.</span><span class="nx">writable</span><span class="p">))</span> <span class="p">{</span>
-</span><span class='line'>        <span class="k">return</span> <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="p">.</span><span class="nx">connection</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(((</span><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="p">.</span><span class="nx">connection</span><span class="p">)</span> <span class="o">?</span>
-</span><span class='line'>        <span class="s2">&quot;UNHEALTHY SQL CONNECTION; RE&quot;</span> <span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;CONNECTING TO SQL.&quot;</span><span class="p">);</span>
-</span><span class='line'>    <span class="kd">var</span> <span class="nx">connection</span> <span class="o">=</span> <span class="nx">mysql</span><span class="p">.</span><span class="nx">createConnection</span><span class="p">({</span>
-</span><span class='line'>        <span class="nx">host</span><span class="o">:</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">host</span><span class="p">,</span>
-</span><span class='line'>        <span class="nx">port</span><span class="o">:</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">port</span><span class="p">,</span>
-</span><span class='line'>        <span class="nx">database</span><span class="o">:</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">db_name</span><span class="p">,</span>
-</span><span class='line'>        <span class="nx">user</span><span class="o">:</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">username</span><span class="p">,</span>
-</span><span class='line'>        <span class="nx">password</span><span class="o">:</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">password</span><span class="p">,</span>
-</span><span class='line'>        <span class="c1">//中文读取</span>
-</span><span class='line'>        <span class="nx">charset</span><span class="o">:</span> <span class="s2">&quot;utf8&quot;</span>
-</span><span class='line'>    <span class="p">});</span>
-</span><span class='line'>    <span class="nx">connection</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;SQL CONNECT ERROR: &quot;</span> <span class="o">+</span> <span class="nx">err</span><span class="p">);</span>
-</span><span class='line'>        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;SQL CONNECT SUCCESSFUL.&quot;</span><span class="p">);</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>    <span class="p">});</span>
-</span><span class='line'>    <span class="nx">connection</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;close&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;SQL CONNECTION CLOSED.&quot;</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">});</span>
-</span><span class='line'>    <span class="nx">connection</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;SQL CONNECTION ERROR: &quot;</span> <span class="o">+</span> <span class="nx">err</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">});</span>
-</span><span class='line'>    <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="p">.</span><span class="nx">connection</span> <span class="o">=</span> <span class="nx">connection</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="p">.</span><span class="nx">connection</span><span class="p">;</span>
-</span><span class='line'><span class="p">};</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Open a connection automatically at app startup.</span>
-</span><span class='line'><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="p">.</span><span class="nx">getConnection</span><span class="p">();</span>
-</span><span class='line'><span class="c1">// If you&#39;ve saved this file as database.js, then get and use the</span>
-</span><span class='line'><span class="c1">// connection as in the following example:</span>
-</span><span class='line'><span class="c1">// var database = require(__dirname + &quot;/database&quot;);</span>
-</span><span class='line'><span class="c1">// var connection = database.getConnection();</span>
-</span><span class='line'><span class="c1">// connection.query(query, function(err, results) { ....</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<hr />
-
-<p>伊泽<br/>
-2013-07-07于杭州</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[怎么使用grunt-tps]]></title>
-    <link href="http://www.ithans.com/blog/2013/05/28/how-to-use-grunt-tps/"/>
-    <updated>2013-05-28T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/05/28/how-to-use-grunt-tps</id>
-    <content type="html"><![CDATA[<h3>grunt-tps是什么。</h3>
-
-<p>首先来说下TPS是什么，TPS的全称是Taobao Pictures System，中文意思就是淘宝图片系统，主要用于存放图片，当然也可以存放其他的东西。</p>
-
-<p>而grunt-tps就是tps的grunt插件，基于tpsmate，只需要经过简单的配置，就可以用grunt进行自动化管理。</p>
-
-<h3>为什么要用grunt-tps</h3>
-
-<ol>
-<li><strong>自动化</strong>，特别是当你的需要替换的目录是在一个文件夹下的，可以直接使用<code>xx/**/*</code>这样的方式。</li>
-<li>和grunt结合，grunt是个大趋势，使用grunt进行将平时一些反复劳动交给工具去做，提高工作效率。所有的事情，一行<code>grunt</code>搞定，简单轻松愉快。</li>
-<li>减少出错率，人工上传替换，难免会出现错误。</li>
-</ol>
-
-
-<h3>tpsmate是什么？</h3>
-
-<p>TPS Mate是TPS系统的命令行版本。其中命令行版本基于python，当前功能主要包括上传单张图片、批量上传图片以及样式文件中背景图片的批量上传以及输出。其目的主要为减少手工替换以及为可能出现的前端打包工具提供更为有效的支持。</p>
-
-<h3>怎么安装tpsmate</h3>
-
-<p>首先要安装<code>python</code>，<a href="">http://www.python.org/download/</a></p>
-
-<h4>使用tpsmate需要具备的条件：</h4>
-
-<ol>
-<li>淘宝内部环境，需要可以访问tms.taobao.com</li>
-<li>有上传图片至tps的权限，看下你能否在<a href="http://tps.tms.taobao.com/photo/index.htm">这里</a>上传图片</li>
-</ol>
-
-
-<h3>怎么使用grunt-tps</h3>
-
-<p>如果你以前从来没有用过<a href="http://gruntjs.com/">Grunt</a>，推荐你看看Grunt的<a href="http://gruntjs.com/getting-started">Getting Start</a></p>
-
-<p>如何安装grunt？</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">npm</span> <span class="n">uninstall</span> <span class="o">-</span><span class="n">g</span> <span class="n">grunt</span>
-</span><span class='line'><span class="nf">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">g</span> <span class="n">grunt</span><span class="o">-</span><span class="n">cli</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>接下来就是要安装grunt-tps</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">npm</span> <span class="n">install</span> <span class="n">grunt</span> <span class="c1">--save-dev</span>
-</span><span class='line'><span class="nf">npm</span> <span class="n">install</span> <span class="n">grunt</span><span class="o">-</span><span class="n">tps</span> <span class="c1">--save-dev</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>你的Gruntfile.js中加入这一段</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">tps</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'><span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">argv</span><span class="o">:</span> <span class="s2">&quot;--inplace&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="p">},</span>
-</span><span class='line'><span class="nx">all</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;test.css&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/**/*.css&#39;</span><span class="p">,</span> <span class="s1">&#39;test/**/*.scss&#39;</span><span class="p">,</span><span class="s1">&#39;index.htm&#39;</span><span class="p">]</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>你的Gruntfile.js中，看起来应该这样的</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="c1">// Project configuration.</span>
-</span><span class='line'>    <span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
-</span><span class='line'>        <span class="c1">// Configuration to be run (and then tested).</span>
-</span><span class='line'>        <span class="nx">tps</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>            <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>                <span class="nx">argv</span><span class="o">:</span> <span class="s2">&quot;--inplace&quot;</span>
-</span><span class='line'>            <span class="p">},</span>
-</span><span class='line'>            <span class="nx">all</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;test.css&#39;</span><span class="p">,</span> <span class="s1">&#39;lib/**/*&#39;</span><span class="p">,</span> <span class="s1">&#39;test/**/*.scss&#39;</span><span class="p">,</span><span class="s1">&#39;index.htm&#39;</span><span class="p">]</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>    <span class="p">});</span>
-</span><span class='line'>    <span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">&#39;grunt-tps&#39;</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;tps&#39;</span><span class="p">]);</span>
-</span><span class='line'><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li><code>argv</code>是tpsmate的参数，比如<code>--inplace</code>(用tps路径「线上路径」替换本地路径)，参考tpsmate的命令行方式</li>
-</ul>
-
-
-<p>grunt-tps源码地址:<a href="">https://github.com/yize/grunt-tps</a></p>
-
-<hr />
-
-<p>伊泽<br/>
-2013-5-28于杭州</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[恢复mac下的/usr/local/bin]]></title>
-    <link href="http://www.ithans.com/blog/2013/05/27/usr-local-bin/"/>
-    <updated>2013-05-27T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/05/27/usr-local-bin</id>
-    <content type="html"><![CDATA[<p>今天一早配置phpstorm的时候，看到文件上有很多warn，比如，require不存在这样。</p>
-
-<p>然后就开始坑爹的瞎搞了，点了<code>external libraries</code>里，添加了<code>/usr/local/bin/node</code></p>
-
-<p>发现还是有warn报错，随之，看是悲剧的一步，虽然我是想删除external libraries中对node的引用，删除的时候，有红色的提示，没管那么多，直接跳过去了。。。</p>
-
-<p>发现不对，在<code>terminal</code>中，各种<code>node</code>,<code>git</code>这样的命令没用了。</p>
-
-<p>用sudo也是没有权限。</p>
-
-<p>后来同事提醒，可能是权限问题。</p>
-
-<p>查了下此时的/usr/local/bin下的文件，现在都是在我的名下，group也在admin下。</p>
-
-<p>试了下重新安装node，发现，node在root名下，group是wheel。</p>
-
-<p>并且是有<code>x</code>权限的。</p>
-
-<p>解决方法如下：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">sudo</span> <span class="n">chmod</span> <span class="o">-</span><span class="kt">R</span> <span class="o">+</span><span class="n">x</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span>
-</span><span class='line'><span class="nf">sudo</span> <span class="n">chown</span> <span class="o">-</span><span class="kt">R</span> <span class="n">root</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span>
-</span><span class='line'><span class="nf">sudo</span> <span class="n">chgrp</span> <span class="o">-</span><span class="kt">R</span> <span class="n">wheel</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>如此，解决。</p>
-
-<hr />
-
-<p>伊泽<br/>
-2013-5-27于杭州</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[console.log]]></title>
-    <link href="http://www.ithans.com/blog/2013/05/24/console-log/"/>
-    <updated>2013-05-24T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/05/24/console-log</id>
-    <content type="html"><![CDATA[<p>作为开发人员，用好调试工具可以提高工作效率，今天就来说说<code>console.log</code></p>
-
-<p><code>console.log</code> 很简单，</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">$0</span><span class="p">)</span> <span class="c1">//$0是elements panel 里面你选中的DOM结构。也可以使用console.dir($0)</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="c1">//多参数 </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>以上这些都是基本的用法，不赘述。</p>
-
-<p>下面就来说说，你可能不知道的console.log</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">userName</span> <span class="o">=</span> <span class="s2">&quot;yize&quot;</span><span class="p">,</span><span class="nx">userPoints</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;User %s has %d points&quot;</span><span class="p">,</span> <span class="nx">userName</span><span class="p">,</span> <span class="nx">userPoints</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>运行以上命令，控制台会输出User yize has 100 points</p>
-
-<p>$s,$d看起来是不是特别眼熟，貌似是大学的时候学过的C语言，哈哈</p>
-
-<p>chrome dev tools 目前支持以下几种格式：</p>
-
-<table>
-    <thead>
-        <tr>
-            <th>Format Specifier</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <code>%s</code>
-            </td>
-            <td>Formats the value as a string.//字符串</td>
-        </tr>
-        <tr>
-            <td>
-                <code>%d</code>
-                or
-                <code>%i</code>
-            </td>
-            <td>Formats the value as an integer.//整形</td>
-        </tr>
-        <tr>
-            <td>
-                <code>%f</code>
-            </td>
-            <td>Formats the value as a floating point value.//浮点数</td>
-        </tr>
-        <tr>
-            <td>
-                <code>%o</code>
-            </td>
-            <td>
-                Formats the value as an expandable DOM element (as in the Elements panel).//DOM元素
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <code>%O</code>
-            </td>
-            <td>Formats the value as an expandable JavaScript object.//JS对象</td>
-        </tr>
-        <tr>
-            <td>
-                <code>%c</code>
-            </td>
-            <td>
-                Formats the output string according to CSS styles you provide.//CSS 样式
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-
-<p>目测<code>console.log('%O',document.body) === console.dir(document.body)</code></p>
-
-<p>改变log的样式：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">userName</span> <span class="o">=</span> <span class="s2">&quot;yize&quot;</span><span class="p">,</span><span class="nx">userPoints</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;%cUser %s has %d points&quot;</span><span class="p">,</span> <span class="s2">&quot;color:orange; background:blue; font-size: 16pt&quot;</span><span class="p">,</span> <span class="nx">userName</span><span class="p">,</span> <span class="nx">userPoints</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><img src="http://ww3.sinaimg.cn/large/60ee1ef8gw1e4z9k9snadj218i03e75p.jpg" alt="图片" />
-chrome dev tools很强大，官方文档:<a href="">https://developers.google.com/chrome-developer-tools/</a></p>
-
-<hr />
-
-<p>伊泽<br/>
-2013-5-24于杭州</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[popular nodejs modules]]></title>
-    <link href="http://www.ithans.com/blog/2013/05/20/popular-nodejs-modules/"/>
-    <updated>2013-05-20T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/05/20/popular-nodejs-modules</id>
-    <content type="html"><![CDATA[<p>just for memory</p>
-
-<ul>
-<li><strong>colors</strong> <a href="">https://github.com/marak/colors.js/</a></li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">colors</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./colors&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">.</span><span class="nx">green</span><span class="p">);</span> <span class="c1">// outputs green text</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;i like cake and pies&#39;</span><span class="p">.</span><span class="nx">underline</span><span class="p">.</span><span class="nx">red</span><span class="p">)</span> <span class="c1">// outputs red underlined text</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;inverse the color&#39;</span><span class="p">.</span><span class="nx">inverse</span><span class="p">);</span> <span class="c1">// inverses the color</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;OMG Rainbows!&#39;</span><span class="p">.</span><span class="nx">rainbow</span><span class="p">);</span> <span class="c1">// rainbow (ignores spaces)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li><strong>mkdirp</strong> <a href="">https://github.com/substack/node-mkdirp</a></li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">mkdirp</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;mkdirp&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nx">mkdirp</span><span class="p">(</span><span class="s1">&#39;/tmp/foo/bar/baz&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">else</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;pow!&#39;</span><span class="p">)</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li><strong> iconv-lite </strong> <a href="">https://github.com/ashtuchkin/iconv-lite</a></li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">iconv</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;iconv-lite&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Convert from an encoded buffer to string.</span>
-</span><span class='line'><span class="nx">str</span> <span class="o">=</span> <span class="nx">iconv</span><span class="p">.</span><span class="nx">decode</span><span class="p">(</span><span class="nx">buf</span><span class="p">,</span> <span class="s1">&#39;win1251&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Convert from string to an encoded buffer.</span>
-</span><span class='line'><span class="nx">buf</span> <span class="o">=</span> <span class="nx">iconv</span><span class="p">.</span><span class="nx">encode</span><span class="p">(</span><span class="s2">&quot;Sample input string&quot;</span><span class="p">,</span> <span class="s1">&#39;win1251&#39;</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li><strong> send </strong> <a href="">https://github.com/visionmedia/send</a></li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">send</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;send&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">){</span>
-</span><span class='line'>  <span class="c1">// your custom error-handling logic:</span>
-</span><span class='line'>  <span class="kd">function</span> <span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">res</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">=</span> <span class="nx">err</span><span class="p">.</span><span class="nx">status</span> <span class="o">||</span> <span class="mi">500</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="c1">// your custom directory handling logic:</span>
-</span><span class='line'>  <span class="kd">function</span> <span class="nx">redirect</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">res</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">=</span> <span class="mi">301</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">res</span><span class="p">.</span><span class="nx">setHeader</span><span class="p">(</span><span class="s1">&#39;Location&#39;</span><span class="p">,</span> <span class="nx">req</span><span class="p">.</span><span class="nx">url</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">&#39;Redirecting to &#39;</span> <span class="o">+</span> <span class="nx">req</span><span class="p">.</span><span class="nx">url</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="c1">// transfer arbitrary files from within</span>
-</span><span class='line'>  <span class="c1">// /www/example.com/public/*</span>
-</span><span class='line'>  <span class="nx">send</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">url</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="p">).</span><span class="nx">pathname</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">root</span><span class="p">(</span><span class="s1">&#39;/www/example.com/public&#39;</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;directory&#39;</span><span class="p">,</span> <span class="nx">redirect</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">res</span><span class="p">);</span>
-</span><span class='line'><span class="p">}).</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li><strong> connect </strong> <a href="">https://github.com/senchalabs/connect</a></li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">connect</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;connect&#39;</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">,</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">connect</span><span class="p">()</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">connect</span><span class="p">.</span><span class="nx">favicon</span><span class="p">())</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">connect</span><span class="p">.</span><span class="nx">logger</span><span class="p">(</span><span class="s1">&#39;dev&#39;</span><span class="p">))</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">connect</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span><span class="s1">&#39;public&#39;</span><span class="p">))</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">connect</span><span class="p">.</span><span class="nx">directory</span><span class="p">(</span><span class="s1">&#39;public&#39;</span><span class="p">))</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">connect</span><span class="p">.</span><span class="nx">cookieParser</span><span class="p">())</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">connect</span><span class="p">.</span><span class="nx">session</span><span class="p">({</span> <span class="nx">secret</span><span class="o">:</span> <span class="s1">&#39;my secret here&#39;</span> <span class="p">}))</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">){</span>
-</span><span class='line'>    <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">&#39;Hello from Connect!\n&#39;</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">app</span><span class="p">).</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<hr />
-
-<p>伊泽<br/>
-2013-5-20于杭州</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[env node\r No such file or directory]]></title>
-    <link href="http://www.ithans.com/blog/2013/05/18/fix-node-r-No-such-file-or-directory-problem/"/>
-    <updated>2013-05-18T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/05/18/fix-node-r-No-such-file-or-directory-problem</id>
-    <content type="html"><![CDATA[<p>env: node\r: No such file or directory</p>
-
-<p>uitest是基于nodejs的，用<code>npm install uitest -g</code>安装完之后，在mac下运行，提示<code>env: node\r: No such file or directory</code>，检查了下bin文件中，第一行是</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="o">#!</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">env</span> <span class="n">node</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>这看起来是没有任何问题的，当然是肉眼看起来。</p>
-
-<p>问题的分析：</p>
-
-<p>env：node\r</p>
-
-<p>注意下这里的\r，好眼熟，是个换行，原谅我对DOS不是很了解。。。</p>
-
-<p>google了下发现找到了<a href="https://github.com/foglcz/tscw/issues/1">这个</a></p>
-
-<p>里面提到，用dos2unix转换下就可以了。</p>
-
-<p>我的机器上没装dos2unix，用brew装了个</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">brew</span> <span class="n">install</span> <span class="n">dos2unix</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>接着cd到 bin目录下</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">sudo</span> <span class="n">dos2unix</span> <span class="n">uitest</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>就可以了</p>
-
-<hr />
-
-<p>伊泽<br/>
-2013-5-18于杭州</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[webkit桌面版本浏览器将不再支持-webkit-text-size-adjust]]></title>
-    <link href="http://www.ithans.com/blog/2013/05/17/webkit-text-size-adjust-no-longer-supported/"/>
-    <updated>2013-05-17T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/05/17/webkit-text-size-adjust-no-longer-supported</id>
-    <content type="html"><![CDATA[<p> 昨天升级了chrome dev到 28.0.1500.11 dev-m 版本的时候发现，-webkit-text-size-adjust属性失效了，说来也比较巧，公司台式机上装的是chrome正式版，在用QQ管家升级软件的时候，就想着把台式机上的chrome也升级到dev版本。自己的demo上刚好也用到了10px的字体（一个角标）</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nc">.demo</span><span class="p">{</span>
-</span><span class='line'>  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">text</span><span class="o">-</span><span class="k">size</span><span class="o">-</span><span class="n">adjust</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">font-size</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
-</span><span class='line'> <span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>demo在<a href="http://codepen.io/yize/pen/Hahiv">这里</a></p>
-
-<p>可以看到，在新版本中的chrome等webkit浏览器中，如果你没有主动去设置过字体大小下限的话，demo中的字应该都是一样大的。</p>
-
-<p>chrome字体大小设置是在「设置-网络内容-字体大小下限」中。
-safari默认不会开启下限，选项是在「偏好-高级-辅助功能-从不使用小于大小的字体」</p>
-
-<p>官方移除说明在<a href="http://trac.webkit.org/changeset/145168">这里</a></p>
-
-<p>原因是：</p>
-
-<blockquote><p>This property existed to support a number of Apple-internal clients of WebKit.
-We no longer need this property, and since it&rsquo;s clashing with a mobile version of the
-same property with different meaning, let&rsquo;s remove it altogether from the desktop build.</p></blockquote>
-
-<p>大概意思是：</p>
-
-<blockquote><p>这个属性的存在是为了支持一些使用webkit的苹果内部设备，我们不再需要这个属性了，而且还有一点就是，这个属性和手机版本的webkit浏览器有名字相同但是有不同的意思，所以我们还是将这个属性从桌面版本中移除了。</p></blockquote>
-
-<p>要解决这个的问题，可以这么做</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nc">.demo</span><span class="p">{</span>
-</span><span class='line'>  <span class="k">font-size</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
-</span><span class='line'>  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">83</span><span class="p">);</span>
-</span><span class='line'>  <span class="k">display</span><span class="o">:</span><span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>demo在<a href="http://codepen.io/yize/pen/rycgv">这里</a></p>
-
-<p>但是这么写当然不是正确的解决方法，目前先凑合着这么用了。</p>
-
-<p>在statckoverflow上提了个<a href="http://stackoverflow.com/questions/16589785/webkit-text-size-adjust-is-no-longer-supported-how-to-set-font-size-to-less-tha">问题</a>，老外的意见都是不赞成修改用户设定的大小下限，因为用户已经告知浏览器，自己能接收的最小的字体大小就是设定的那个大小，再小的话，看起来就会太小。</p>
-
-<p>我的意见也是不希望去违背用户的意思，将字体设置成小于12像素。希望给用户最好的体验。</p>
-
-<hr />
-
-<p>伊泽<br/>
-2013-5-17于杭州</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[前端编码问题汇总]]></title>
-    <link href="http://www.ithans.com/blog/2013/05/12/encode-war-in-F2E/"/>
-    <updated>2013-05-12T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/05/12/encode-war-in-F2E</id>
-    <content type="html"><![CDATA[<h2>前端可能会遇到的编码问题有哪些？</h2>
-
-<ol>
-<li>文件编码，GBK，注意IDE编码，不要默认转换UTF-8.</li>
-<li>文件中内容的编码，可以将内容手动转成UTF-8编码或者unicode</li>
-<li>scss中编码，解决方法，在scss头部加入 <code>@charset "GBK"</code></li>
-<li>请求时的中文编码，淘宝规范在请求后加入 <code>_input_charset=utf-8</code></li>
-<li>&ldquo;&lt;>&#8221;等直接输出的，应该用<code>&amp;lt；</code>,<code>&amp;gt；</code>这样的转义符号</li>
-<li>如果直接读取用户输入的字符，应该用<code>encodeURIComponent</code>,<code>htmlspecialchars</code>等编码</li>
-<li>JS引入的时候，带上<code>charset</code>，指定文件的编码</li>
-<li><p>HTML页面中，<code>meta</code>指定<code>charset</code>,HTTP解析的时候，有三个地方可以埋藏代码信息：</p>
-
-<ol>
-<li>http头的Content-Type</li>
-<li>html页面中的meta标签中制定的charset</li>
-<li>页面正文数据（浏览器可以跟进二进制码来判断编码）</li>
-</ol>
-</li>
-</ol>
-
-
-<blockquote><p>如果三者编码不一致，浏览器会首先读取http头中的content-type，若没有设定编码，再查找页面中meta标签中的charset设定，如果还没有就以浏览器默认编码来显示，如果默认编码没有指定，浏览器会通过解析正文内容来判断编码.所以，页面是gbk编码，即便meta属性中设置 charset=utf-8，只要content-type中设定为gbk（或者GB2312、GB18030），该页面就正常显示，如果这时没有设定 content-type的编码，浏览器就会以meta中的charset属性为准，页面出现乱码。</p></blockquote>
-
-<ol>
-<li>JSONP中的中文问题，解决方法，后端返回<code>unicode</code>编码。</li>
-<li>nodejs中的编码问题，可以使用<code>iconv</code>解决，或者直接用<code>buffer</code></li>
-</ol>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[cubieboard问题汇总]]></title>
-    <link href="http://www.ithans.com/blog/2013/05/12/cubieboard/"/>
-    <updated>2013-05-12T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/05/12/cubieboard</id>
-    <content type="html"><![CDATA[<h2>Cubieboard</h2>
-
-<ol>
-<li><p>Cubieboard是什么？</p>
-
-<p> Cubieboard是一个又小（10x6 厘米）又强大的<a href="http://zh.wikipedia.org/wiki/ARM%E6%9E%B6%E6%A7%8B">ARM</a>开发板，它搭载了Allwinner <a href="http://linux-sunxi.org/A10">A10</a>( Cortex-A8 )单芯片，特点：黑客友好，可扩展，成本非常低。<br/>
- 通俗的说，就是一台搭载arm CPU的电脑
- 目前淘宝价格￥379.</p></li>
-<li><p>板子配置是怎样的？</p>
-
-<ul>
-<li>1G ARM cortex-A8处理器, NEON, VFPv3, 512KB二级缓存</li>
-<li>Mali400, OpenGL ES GPU</li>
-<li>1GB DDR3 @ 480MHz</li>
-<li>HDMI 1080p高清输出</li>
-<li>100M USB以太网口</li>
-<li>4GB Nand Flash</li>
-<li>2 USB Host, 1 MMC slot, 1 SATA, 1 ir</li>
-<li>96个扩展pin,支持  i2c, spi, lcd和红外传感器, ..</li>
-<li>运行Android, Ubuntu或其他Linux版本</li>
-</ul>
-</li>
-<li><p>Cubieboard和Raspberry Pi 有关系吗？</p>
-
-<p> 没有关系，网上说是Raspberry Pi的加强版，那只是宣传手段而已，Raspberry Pi是国外团队搞的，Cubieboard是国内团队搞的。
- Cubieboard是国货，是由汤亮（Tom Cubie）领导的团队在indiegogo上集资后开发的</p>
-
-<p> Cubieboard和Raspberry Pi的<a href="http://just4fun.cn/?cat=73">对比</a></p>
-
-<p> Cubieboard大约比树莓派快大约3到2倍的样子</p></li>
-<li><p>Cubieboard可以用来干嘛？</p>
-
-<p> 适合纯粹玩系统或用来影音娱乐,拥有1080p的HDMI输出口<br/>
- cubieboard只有网口没有网卡（也就是没有network controller），所有的收包解包都由CPU完成，所以能支持的流量比较有限，不过撑个10万的闲链接还是没问题的。
-还想了解一下cubieboard对https的支撑能力，于是在cubieboard上装了tengine，配上https签名再用ab压力测试，ab压测脚本是：</p></li>
-</ol>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">ab</span> <span class="o">-</span><span class="n">n</span> <span class="mi">20000</span> <span class="o">-</span><span class="n">c</span> <span class="mi">20</span> <span class="o">-</span><span class="n">k</span> <span class="n">url</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>测试结果：访问https的QPS为<code>755</code>, 访问http的QPS为<code>1269</code></p>
-
-<p>用cubieboard搭个小网站是绰绰有余的，一个小的聊天服务器兴许也可以。</p>
-
-<ol>
-<li><p>目前支持的系统</p>
-
-<ul>
-<li>android</li>
-<li>xbmc</li>
-<li>linaro</li>
-<li>ubuntu</li>
-<li>archlinux</li>
-<li>freebsd</li>
-</ul>
-</li>
-<li><p>利用动态域名解析服务，将cubieboard作为服务器。</p>
-
-<p> 可以参考<a href="http://cn.cubieboard.org/forum.php?mod=viewthread&amp;tid=189&amp;extra=page%3D2%26orderby%3Dlastpost">这篇文章</a></p>
-
-<p> 推荐学习资料<a href="http://cb.e-fly.org/">http://cb.e-fly.org/</a></p></li>
-</ol>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ubuntu12.04phpstorm 5.0.4增加快捷启动]]></title>
-    <link href="http://www.ithans.com/blog/2013/03/06/create-phpstorm-desktop/"/>
-    <updated>2013-03-06T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/03/06/create-phpstorm-desktop</id>
-    <content type="html"><![CDATA[<p>在ubuntu上怎么创建phpstorm的快捷方式？(phpstorm.desktop)
-其实很简单</p>
-
-<p>phpstorm菜单 &mdash;> Tools &mdash;>  Create Desktop Entry &hellip;</p>
-
-<p>按下super(win)键，搜索下phpstrom试试，也可以直接把phpstorm固定在任务栏快速启动。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[浏览器的工作原理：新式网络浏览器幕后揭秘[转]]]></title>
-    <link href="http://www.ithans.com/blog/2013/02/25/how-browsers-work1/"/>
-    <updated>2013-02-25T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/02/25/how-browsers-work1</id>
-    <content type="html"><![CDATA[<div class="preface">
+<div class="entry-content"><div class="preface">
     <h2>序言</h2>
     <p>
         这是一篇全面介绍 Webkit 和 Gecko 内部操作的入门文章，是以色列开发人员塔利·加希尔大量研究的成果。在过去的几年中，她查阅了所有公开发布的关于浏览器内部机制的数据
@@ -3137,659 +2152,229 @@ ident   {nmstart}{nmchar}*
     </a>
 </p>
 
-]]></content>
-  </entry>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-  <entry>
-    <title type="html"><![CDATA[当你输入一个网址的时候，实际上发生了什么[转]]]></title>
-    <link href="http://www.ithans.com/blog/2013/02/24/what-really-happens-when-you-navigate-to-a-url/"/>
-    <updated>2013-02-24T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/02/24/what-really-happens-when-you-navigate-to-a-url</id>
-    <content type="html"><![CDATA[<p>
-    原文:
-    <a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/" target="_blank">
-        http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/
+
+<span class="byline author vcard">Posted by <span class="fn">邵寒超</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-25T00:00:00+08:00" pubdate data-updated="true">Feb 25<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/stack/'>Stack</a>
+  
+</span>
+
+
+      
+
+<span class="tags">
+  
+    <a class='tag' href='/tags/browser/'>Browser</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/02/24/what-really-happens-when-you-navigate-to-a-url/" title="Previous Post: 当你输入一个网址的时候，实际上发生了什么[转]">&laquo; 当你输入一个网址的时候，实际上发生了什么[转]</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/03/06/create-phpstorm-desktop/" title="Next Post: ubuntu12.04phpstorm 5.0.4增加快捷启动">ubuntu12.04phpstorm 5.0.4增加快捷启动 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/12/08/five-safari-chrome-shortcuts/">five-safari-chrome-shortcuts</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/27/iframe-size-not-work-in-ios/">iframe-size-not-work-in-IOS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/27/use-octopress-new-post-function-with-zsh/">zsh下rake new_post["title"] 报错的问题</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/28/weekend-thinking/">周末有感</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/28/javascript-binary-search/">Javascript 折半搜索法（二分法）</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h2>Categories</h2>
+    <ul id="category-list"><li><a href='/blog/categories/chrome'>chrome (1)</a></li><li><a href='/blog/categories/life'>Life (2)</a></li><li><a href='/blog/categories/stack'>Stack (19)</a></li><li><a href='/blog/categories/useful'>useful (1)</a></li></ul>
+</section>
+<section>
+  <h2>Tag Cloud</h2>
+  <ul class="tag-cloud">
+    <li><a style="font-size: 60%" href="/tags/bootstrap/">Bootstrap</a></li>
+<li><a style="font-size: 165%" href="/tags/browser/">Browser</a></li>
+<li><a style="font-size: 112%" href="/tags/css/">CSS</a></li>
+<li><a style="font-size: 60%" href="/tags/cubieboard/">Cubieboard</a></li>
+<li><a style="font-size: 60%" href="/tags/diary/">Diary</a></li>
+<li><a style="font-size: 60%" href="/tags/github/">Github</a></li>
+<li><a style="font-size: 60%" href="/tags/grunt/">Grunt</a></li>
+<li><a style="font-size: 60%" href="/tags/ide/">IDE</a></li>
+<li><a style="font-size: 60%" href="/tags/iis/">IIS</a></li>
+<li><a style="font-size: 60%" href="/tags/ios/">IOS</a></li>
+<li><a style="font-size: 112%" href="/tags/javascript/">JavaScript</a></li>
+<li><a style="font-size: 60%" href="/tags/jekyll/">Jekyll</a></li>
+<li><a style="font-size: 165%" href="/tags/linux/">Linux</a></li>
+<li><a style="font-size: 60%" href="/tags/mac/">Mac</a></li>
+<li><a style="font-size: 60%" href="/tags/mysql/">Mysql</a></li>
+<li><a style="font-size: 60%" href="/tags/nginx/">Nginx</a></li>
+<li><a style="font-size: 165%" href="/tags/nodejs/">NodeJS</a></li>
+<li><a style="font-size: 60%" href="/tags/octopress/">Octopress</a></li>
+<li><a style="font-size: 60%" href="/tags/ruby/">Ruby</a></li>
+<li><a style="font-size: 60%" href="/tags/shell/">Shell</a></li>
+<li><a style="font-size: 60%" href="/tags/terminal/">Terminal</a></li>
+<li><a style="font-size: 60%" href="/tags/thinking/">Thinking</a></li>
+<li><a style="font-size: 60%" href="/tags/zsh/">Zsh</a></li>
+
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/yize">@yize</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = 'http://ithans.u.qiniudn.com/ithansjXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'yize',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="http://ithans.u.qiniudn.com/ithansgithub.js" type="text/javascript"> </script>
+</section>
+
+<section>
+	<h2>Weibo</h2>
+<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=0&speed=0&skin=5&isTitle=1&noborder=0&isWeibo=1&isFans=0&uid=1626218232&verifier=b3593ceb&dpc=1"></iframe>
+</section><section>
+    <h2>大牛博客</h2>
+    <ul>
+        <li class="post">
+            <a href="http://www.lianghaijun.com" target="_blank">道璘</a>
+        </li>
+    </ul>
+</section>
+
+
+<section class="googleplus googleplus-hidden">
+  <h1>
+    <a href="https://plus.google.com/yize.shc@gmail.com?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
     </a>
-    &nbsp;
-    <br></p>
+  </h1>
+</section>
 
 
-<p>
-    作为一个软件开发者，你一定会对网络应用如何工作有一个完整的层次化的认知，同样这里也包括这些应用所用到的技术：像浏览器，HTTP，HTML，网络服务器，需求处理等等。
-</p>
 
-
-<p>本文将更深入的研究当你输入一个网址的时候，后台到底发生了一件件什么样的事～</p>
-
-
-<h3>1. 首先嘛，你得在浏览器里输入要网址:</h3>
-
-
-<p>
-    <img
-        src="http://igoro.com/wordpress/wp-content/uploads/2010/02/image4.png" alt="image"
-        style="width: 562px; height: 98px; cursor: url(http://res.qqmail.com/zh_CN/htmledition/images/newicon/zbig.cur), auto;"
-        title="image" width="591" border="0" height="103"></p>
-
-
-<p></p>
-
-
-<h3>2. 浏览器查找域名的IP地址</h3>
-
-
-<p>
-    <img
-        src="http://igoro.com/wordpress/wp-content/uploads/2010/02/image13.png" alt="image"
-        style="border-width: 0px; display: inline;" title="image" width="228" border="0" height="96"></p>
-
-
-<p>导航的第一步是通过访问的域名找出其IP地址。DNS查找过程如下：</p>
-
-
-<div>
-    <ul>
-        <li> <strong>浏览器缓存 –</strong>
-            浏览器会缓存DNS记录一段时间。 有趣的是，操作系统没有告诉浏览器储存DNS记录的时间，这样不同浏览器会储存个自固定的一个时间（2分钟到30分钟不等）。
-        </li>
-        <li> <strong>系统缓存</strong>
-            – 如果在浏览器缓存里没有找到需要的记录，浏览器会做一个系统调用（windows里是gethostbyname）。这样便可获得系统缓存中的记录。
-        </li>
-        <li>
-            <strong>路由器缓存</strong>
-            – 接着，前面的查询请求发向路由器，它一般会有自己的DNS缓存。
-        </li>
-        <li>
-            <strong>ISP DNS 缓存</strong>
-            – 接下来要check的就是ISP缓存DNS的服务器。在这一般都能找到相应的缓存记录。
-        </li>
-        <li>
-            <strong>递归搜索</strong>
-            –
-            你的ISP的DNS服务器从跟域名服务器开始进行递归搜索，从.com顶级域名服务器到Facebook的域名服务器。一般DNS服务器的缓存中会有.com域名服务器中的域名，所以到顶级服务器的匹配过程不是那么必要了。
-        </li>
-    </ul>
-</div>
-
-
-<p>DNS递归查找如下图所示：</p>
-
-
-<p>
-    <img
-        src="http://igoro.com/wordpress/wp-content/uploads/2010/02/500pxAn_example_of_theoretical_DNS_recursion_svg.png"
-        alt="500px-An_example_of_theoretical_DNS_recursion_svg" style="border-width: 0px; display: inline;"
-        title="500px-An_example_of_theoretical_DNS_recursion_svg" width="500" border="0" height="178"></p>
-
-
-<div>
-    <p>
-        DNS有一点令人担忧，这就是像wikipedia.org 或者 facebook.com这样的整个域名看上去只是对应一个单独的IP地址。还好，有几种方法可以消除这个瓶颈：
-    </p>
-    <ul>
-        <li>
-            <a href="http://baike.baidu.com/view/1527368.html" target="_blank">
-                <strong>循环 DNS</strong>
-            </a>
-            是DNS查找时返回多个IP时的解决方案。举例来说，Facebook.com实际上就对应了四个IP地址。
-        </li>
-        <li>
-            <a href="http://baike.baidu.com/view/486970.htm" target="_blank">
-                <strong>负载平衡器</strong>
-            </a>
-            是以一个特定IP地址进行侦听并将网络请求转发到集群服务器上的硬件设备。 一些大型的站点一般都会使用这种昂贵的高性能负载平衡器。
-        </li>
-        <li>
-            <strong>地理 DNS</strong>
-            根据用户所处的地理位置，通过把域名映射到多个不同的IP地址提高可扩展性。这样不同的服务器不能够更新同步状态，但映射静态内容的话非常好。
-        </li>
-        <li>
-            <a href="http://baike.baidu.com/view/1398775.htm" target="_blank">
-                <strong>Anycast</strong>
-            </a>
-            是一个IP地址映射多个物理主机的路由技术。
-            美中不足，Anycast与TCP协议适应的不是很好，所以很少应用在那些方案中。
-        </li>
-    </ul>
-</div>
-
-
-<div>
-    <p>大多数DNS服务器使用Anycast来获得高效低延迟的DNS查找。</p>
-
-    <p></p>
-</div>
-
-
-<h3>3. 浏览器给web服务器发送一个HTTP请求</h3>
-
-
-<p>
-    <img
-        src="http://igoro.com/wordpress/wp-content/uploads/2010/02/image22.png" alt="image"
-        style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px;" title="image" width="216"
-        border="0" height="95"></p>
-
-
-<p>因为像Facebook主页这样的动态页面，打开后在浏览器缓存中很快甚至马上就会过期，毫无疑问他们不能从中读取。</p>
-
-
-<p>所以，浏览器将把一下请求发送到Facebook所在的服务器：</p>
-
-
-<pre>GET http://facebook.com/ HTTP/1.1<br> Accept: application/x-ms-application, image/jpeg, application/xaml+xml, [...]<br> User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; [...]<br> Accept-Encoding: gzip, deflate<br> Connection: Keep-Alive<br> Host: facebook.com<br> Cookie: datr=1265876274-[...]; locale=en_US; lsd=WW[...]; c_user=2101[...]</pre>
-
-
-<p>
-    GET 这个请求定义了要读取的
-    <strong>URL</strong>
-    ： “http://facebook.com/”。 浏览器自身定义 (
-    <strong>User-Agent</strong>
-    头)， 和它希望接受什么类型的相应 (
-    <strong>Accept</strong>
-    and
-    <strong>Accept-Encoding</strong>
-    头).
-    <strong>Connection</strong>
-    头要求服务器为了后边的请求不要关闭TCP连接。
-</p>
-
-
-<p>
-    请求中也包含浏览器存储的该域名的
-    <strong>cookies</strong>
-    。可能你已经知道，在不同页面请求当中，cookies是与跟踪一个网站状态相匹配的键值。这样cookies会存储登录用户名，服务器分配的密码和一些用户设置等。Cookies会以文本文档形式存储在客户机里，每次请求时发送给服务器。
-</p>
-
-
-<div>
-    <p>
-        用来看原始HTTP请求及其相应的工具很多。作者比较喜欢使用fiddler，当然也有像FireBug这样其他的工具。这些软件在网站优化时会帮上很大忙。
-    </p>
-</div>
-
-
-<p>除了获取请求，还有一种是发送请求，它常在提交表单用到。发送请求通过URL传递其参数(e.g.: <a href="http://robozzle.com/puzzle.aspx?id=85">http://robozzle.com/puzzle.aspx?id=85</a>)。发送请求在请求正文头之后发送其参数。</p>
-
-<br>
-
-
-<br>
-
-
-<p>像“<a href="http://facebook.com/%E2%80%9D%E4%B8%AD%E7%9A%84%E6%96%9C%E6%9D%A0%E6%98%AF%E8%87%B3%E5%85%B3%E9%87%8D%E8%A6%81%E7%9A%84%E3%80%82%E8%BF%99%E7%A7%8D%E6%83%85%E5%86%B5%E4%B8%8B%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E8%83%BD%E5%AE%89%E5%85%A8%E7%9A%84%E6%B7%BB%E5%8A%A0%E6%96%9C%E6%9D%A0%E3%80%82%E8%80%8C%E5%83%8F%E2%80%9Chttp:">http://facebook.com/%E2%80%9D%E4%B8%AD%E7%9A%84%E6%96%9C%E6%9D%A0%E6%98%AF%E8%87%B3%E5%85%B3%E9%87%8D%E8%A6%81%E7%9A%84%E3%80%82%E8%BF%99%E7%A7%8D%E6%83%85%E5%86%B5%E4%B8%8B%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E8%83%BD%E5%AE%89%E5%85%A8%E7%9A%84%E6%B7%BB%E5%8A%A0%E6%96%9C%E6%9D%A0%E3%80%82%E8%80%8C%E5%83%8F%E2%80%9Chttp:</a> //example.com/folderOrFile”这样的地址，因为浏览器不清楚folderOrFile到底是文件夹还是文件，所以不能自动添加 斜杠。这时，浏览器就不加斜杠直接访问地址，服务器会响应一个重定向，结果造成一次不必要的握手。</p>
-
-<br>
-
-
-<br>
-
-
-<h3>4. facebook服务的永久重定向响应</h3>
-
-
-<p>
-    <img src="http://igoro.com/wordpress/wp-content/uploads/2010/02/image8.png"
-                                                 alt="image" style="border-width: 0px; display: inline;" title="image"
-                                                 width="214" border="0" height="87"></p>
-
-
-<p>图中所示为Facebook服务器发回给浏览器的响应：</p>
-
-
-<pre>HTTP/1.1 301 Moved Permanently<br> Cache-Control: private, no-store, no-cache, must-revalidate, post-check=0,<br> pre-check=0<br> Expires: Sat, 01 Jan 2000 00:00:00 GMT<br> Location: http://www.facebook.com/<br> P3P: CP="DSP LAW"<br> Pragma: no-cache<br> Set-Cookie: made_write_conn=deleted; expires=Thu, 12-Feb-2009 05:09:50 GMT;<br> path=/; domain=.facebook.com; httponly<br> Content-Type: text/html; charset=utf-8<br> X-Cnection: close<br> Date: Fri, 12 Feb 2010 05:09:51 GMT<br>Content-Length: 0</pre>
-
-
-<p>
-    服务器给浏览器响应一个301永久重定向响应，这样浏览器就会访问“http://www.facebook.com/” 而非“http://facebook.com/”。
-</p>
-
-
-<div>
-    <p>为什么服务器一定要重定向而不是直接发会用户想看的网页内容呢？这个问题有好多有意思的答案。</p>
-
-    <p>
-        其中一个原因跟
-        <strong>搜索引擎排名</strong>
-        有 关。你看，如果一个页面有两个地址，就像http://www.igoro.com/
-        和http://igoro.com/，搜索引擎会认为它们是两个网站，结果造成每一个的搜索链接都减少从而降低排名。而搜索引擎知道301永久重定向是 什么意思，这样就会把访问带www的和不带www的地址归到同一个网站排名下。
-    </p>
-
-    <p>
-        还有一个是用不同的地址会造成
-        <strong>缓存友好性</strong>
-        变差。当一个页面有好几个名字时，它可能会在缓存里出现好几次。
-    </p>
-</div>
-
-
-<h3>5. 浏览器跟踪重定向地址</h3>
-
-
-<p>
-    <img
-        src="http://igoro.com/wordpress/wp-content/uploads/2010/02/image23.png" alt="image"
-        style="border-width: 0px; display: inline;" title="image" width="216" border="0" height="95"></p>
-
-
-<p>现在，浏览器知道了“http://www.facebook.com/”才是要访问的正确地址，所以它会发送另一个获取请求：</p>
-
-
-<pre>GET http://www.facebook.com/ HTTP/1.1<br> Accept: application/x-ms-application, image/jpeg, application/xaml+xml, [...]<br> Accept-Language: en-US<br> User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; [...]<br> Accept-Encoding: gzip, deflate<br> Connection: Keep-Alive<br> Cookie: lsd=XW[...]; c_user=21[...]; x-referer=[...]<br>Host: www.facebook.com</pre>
-
-
-<p>头信息以之前请求中的意义相同。</p>
-
-
-<h3>6. 服务器“处理”请求</h3>
-
-
-<p>
-    <img
-        src="http://igoro.com/wordpress/wp-content/uploads/2010/02/image9.png" alt="image"
-        style="border-width: 0px; display: inline;" title="image" width="93" border="0" height="78"></p>
-
-
-<p>服务器接收到获取请求，然后处理并返回一个响应。</p>
-
-
-<p>
-    这表面上看起来是一个顺向的任务，但其实这中间发生了很多有意思的东西- 就像作者博客这样简单的网站，何况像facebook那样访问量大的网站呢！
-</p>
-
-
-<ul>
-    <li>
-        <strong>Web 服务器软件
-            <br></strong>
-        web服务器软件（像IIS和阿帕奇）接收到HTTP请求，然后确定执行什么请求处理来处理它。请求处理就是一个能够读懂请求并且能生成HTML来进行响应的程序（像ASP.NET,PHP,RUBY&#8230;）。
-        <p>
-            举 个最简单的例子，需求处理可以以映射网站地址结构的文件层次存储。像http://example.com/folder1/page1.aspx这个地
-            址会映射/httpdocs/folder1/page1.aspx这个文件。web服务器软件可以设置成为地址人工的对应请求处理，这样
-            page1.aspx的发布地址就可以是http://example.com/folder1/page1。
-        </p>
-    </li>
-    <li>
-        <strong>请求处理
-            <br></strong>
-        请求处理阅读请求及它的参数和cookies。它会读取也可能更新一些数据，并讲数据存储在服务器上。然后，需求处理会生成一个HTML响应。
-    </li>
-</ul>
-
-
-<div>
-    <p>
-        所 有动态网站都面临一个有意思的难点 -如何存储数据。小网站一半都会有一个SQL数据库来存储数据，存储大量数据和/或访问量大的网站不得不找一些办法把数据库分配到多台机器上。解决方案 有：sharding
-    （基于主键值讲数据表分散到多个数据库中），复制，利用弱语义一致性的简化数据库。
-    </p>
-</div>
-
-
-<div>
-    <p>
-        委 托工作给批处理是一个廉价保持数据更新的技术。举例来讲，Fackbook得及时更新新闻feed，但数据支持下的“你可能认识的人”功能只需要每晚更新
-    （作者猜测是这样的，改功能如何完善不得而知）。批处理作业更新会导致一些不太重要的数据陈旧，但能使数据更新耕作更快更简洁。
-    </p>
-</div>
-
-
-<h3>7. 服务器发回一个HTML响应</h3>
-
-
-<p>
-    <img
-        src="http://igoro.com/wordpress/wp-content/uploads/2010/02/image10.png" alt="image"
-        style="border-width: 0px; display: inline;" title="image" width="214" border="0" height="87"></p>
-
-
-<p>图中为服务器生成并返回的响应：</p>
-
-
-<pre>HTTP/1.1 200 OK<br> Cache-Control: private, no-store, no-cache, must-revalidate, post-check=0,<br> pre-check=0<br> Expires: Sat, 01 Jan 2000 00:00:00 GMT<br> P3P: CP="DSP LAW"<br> Pragma: no-cache<br> Content-Encoding: gzip<br> Content-Type: text/html; charset=utf-8<br> X-Cnection: close<br> Transfer-Encoding: chunked<br> Date: Fri, 12 Feb 2010 09:05:55 GMT<br> <br>2b3Tn@[...]</pre>
-
-
-<p>整个响应大小为35kB，其中大部分在整理后以blob类型传输。</p>
-
-
-<p>
-    <strong>内容编码</strong>
-    头告诉浏览器整个响应体用gzip算法进行压缩。解压blob块后，你可以看到如下期望的HTML：
-</p>
-
-
-<pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"    <br> "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;<br> &lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"<br> lang="en" id="facebook" class=" no_js"&gt;<br> &lt;head&gt;<br> &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;<br> &lt;meta http-equiv="Content-language" content="en" /&gt;<br>...</pre>
-
-
-<p>
-    关于压缩，头信息说明了是否缓存这个页面，如果缓存的话如何去做，有什么cookies要去设置（前面这个响应里没有这点）和隐私信息等等。
-</p>
-
-
-<div>
-    <p>
-        请注意报头中把
-        <strong>Content-type</strong>
-        设置为“
-        <strong>text/html</strong>
-        ”。报头让浏览器将该响应内容以HTML形式呈现，而不是以文件形式下载它。浏览器会根据报头信息决定如何解释该响应，不过同时也会考虑像URL扩展内容等其他因素。
-    </p>
-</div>
-
-
-<h3>8. 浏览器开始显示HTML</h3>
-
-
-<p>在浏览器没有完整接受全部HTML文档时，它就已经开始显示这个页面了：</p>
-
-
-<p>
-    <img
-        src="http://igoro.com/wordpress/wp-content/uploads/2010/02/image6.png" alt="image"
-        style="border-width: 0px; display: inline;" title="image" width="244" border="0" height="137"></p>
-
-
-<h3>
-    9.
-    浏览器发送获取嵌入在HTML中的对象
-</h3>
-
-
-<p>
-    <img src="http://igoro.com/wordpress/wp-content/uploads/2010/02/image11.png" alt="image"
-                                    style="border-width: 0px; display: inline;" title="image" width="214" border="0"
-                                    height="126"></p>
-
-
-<p>在浏览器显示HTML时，它会注意到需要获取其他地址内容的标签。这时，浏览器会发送一个获取请求来重新获得这些文件。</p>
-
-
-<p>下面是几个我们访问facebook.com时需要重获取的几个URL：</p>
-
-
-<ul>
-    <li>
-        <strong>
-            图片
-            <br></strong>
-        http://static.ak.fbcdn.net/rsrc.php/z12E0/hash/8q2anwu7.gif
-        <br>
-        http://static.ak.fbcdn.net/rsrc.php/zBS5C/hash/7hwy7at6.gif
-        <br>…</li>
-    <li>
-        <strong>
-            CSS 式样表
-            <br></strong>
-        http://static.ak.fbcdn.net/rsrc.php/z448Z/hash/2plh8s4n.css
-        <br>
-        http://static.ak.fbcdn.net/rsrc.php/zANE1/hash/cvtutcee.css
-        <br>…</li>
-    <li>
-        <strong>JavaScript 文件</strong>
-        <br>
-        http://static.ak.fbcdn.net/rsrc.php/zEMOA/hash/c8yzb6ub.js
-        <br>
-        http://static.ak.fbcdn.net/rsrc.php/z6R9L/hash/cq2lgbs8.js
-        <br>…</li>
-</ul>
-
-
-<p>这些地址都要经历一个和HTML读取类似的过程。所以浏览器会在DNS中查找这些域名，发送请求，重定向等等&#8230;</p>
-
-
-<p>
-    但
-    不像动态页面那样，静态文件会允许浏览器对其进行缓存。有的文件可能会不需要与服务器通讯，而从缓存中直接读取。服务器的响应中包含了静态文件保存的期限
-    信息，所以浏览器知道要把它们缓存多长时间。还有，每个响应都可能包含像版本号一样工作的ETag头（被请求变量的实体值），如果浏览器观察到文件的版本 ETag信息已经存在，就马上停止这个文件的传输。
-</p>
-
-
-<div>
-    <p>
-        试着猜猜看“
-        <strong>fbcdn.net</strong>
-        ”在地址中代表什么？聪明的答案是&#8221;Facebook内容分发网络&#8221;。Facebook利用内容分发网络（CDN）分发像图片，CSS表和JavaScript文件这些静态文件。所以，这些文件会在全球很多CDN的数据中心中留下备份。
-    </p>
-
-    <p>
-        静态内容往往代表站点的带宽大小，也能通过CDN轻松的复制。通常网站会使用第三方的CDN。例如，Facebook的静态文件由最大的CDN提供商Akamai来托管。
-    </p>
-
-    <p>
-        举例来讲，当你试着ping
-        static.ak.fbcdn.net的时候，可能会从某个akamai.net服务器上获得响应。有意思的是，当你同样再ping一次的时候，响应的服务器可能就不一样，这说明幕后的负载平衡开始起作用了。
-    </p>
-</div>
-
-
-<h3>10. 浏览器发送异步（AJAX）请求</h3>
-
-
-<p>
-    <img src="http://igoro.com/wordpress/wp-content/uploads/2010/02/image12.png" alt="image"
-                                     style="border-width: 0px; display: inline;" title="image" width="214" border="0"
-                                     height="120"></p>
-
-
-<p>在Web 2.0伟大精神的指引下，页面显示完成后客户端仍与服务器端保持着联系。</p>
-
-
-<p>
-    以
-    Facebook聊天功能为例，它会持续与服务器保持联系来及时更新你那些亮亮灰灰的好友状态。为了更新这些头像亮着的好友状态，在浏览器中执行的
-    JavaScript代码会给服务器发送异步请求。这个异步请求发送给特定的地址，它是一个按照程式构造的获取或发送请求。还是在Facebook这个例
-    子中，客户端发送给http://www.facebook.com/ajax/chat/buddy_list.php一个发布请求来获取你好友里哪个 在线的状态信息。
-</p>
-
-
-<p>
-    提起这个模式，就必须要讲讲&#8221;AJAX&#8221;&#8211;
-    “异步JavaScript 和 XML”，虽然服务器为什么用XML格式来进行响应也没有个一清二白的原因。再举个例子吧，对于异步请求，Facebook会返回一些JavaScript的代码片段。
-</p>
-
-
-<div>
-    <p>
-        除了其他，fiddler这个工具能够让你看到浏览器发送的异步请求。事实上，你不仅可以被动的做为这些请求的看客，还能主动出击修改和重新发送它们。AJAX请求这么容易被蒙，可着实让那些计分的在线游戏开发者们郁闷的了。（当然，可别那样骗人家~）
-    </p>
-</div>
-
-
-<div>
-    <p>
-        Facebook聊天功能提供了关于AJAX一个有意思的问题案例：把数据从服务器端推送到客户端。因为HTTP是一个请求-响应协议，所以聊天服务器不能把新消息发给客户。取而代之的是客户端不得不隔几秒就轮询下服务器端看自己有没有新消息。
-    </p>
-
-    <p>
-        这些情况发生时长轮询是个减轻服务器负载挺有趣的技术。如果当被轮询时服务器没有新消息，它就不理这个客户端。而当尚未超时的情况下收到了该客户的新消息，服务器就会找到未完成的请求，把新消息做为响应返回给客户端。
-    </p>
-</div>
-
-
-<h3>总结一下</h3>
-
-
-<p>希望看了本文，你能明白不同的网络模块是如何协同工作的</p>
-
-
-<p>[转自]：</p>
-
-<p><a href="http://www.cnblogs.com/wenanry/archive/2010/02/25/1673368.html" target="_blank"><a href="http://www.cnblogs.com/wenanry/archive/2010/02/25/1673368.html">http://www.cnblogs.com/wenanry/archive/2010/02/25/1673368.html</a></a></p>
-]]></content>
-  </entry>
   
-  <entry>
-    <title type="html"><![CDATA[尝试使用Tengine(nginx)]]></title>
-    <link href="http://www.ithans.com/blog/2013/02/20/try-tengine/"/>
-    <updated>2013-02-20T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/02/20/try-tengine</id>
-    <content type="html"><![CDATA[<p>最近这几天信息量比较大，接触了很多的东西，学了很多，先不说学习方法问题，至少个人在成长。</p>
-
-<p>今天和
-<a wb_screen_name="淘宝道璘" href="#">@淘宝道璘</a>
-一起在玩Tengine</p>
-
-<p>想要做的事情是从apache换到Tengine，道璘之前有研究过nginx，他说：在windows上，nginx存在两个问题，一个是中文路径，两外一个是php不稳定。后来还是切回了apache。</p>
-
-<p>直接用起公司开源的Tengine <a href="https://github.com/taobao/tengine">Github</a></p>
-
-<h2>普通安装模式</h2>
-
-<p>因为需要支持combo，也就是<code>http://example.com/??style1.css,style2.css,foo/style3.css</code>的格式，所以安装流程是这样的：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">git</span> <span class="n">clone</span> <span class="n">git</span><span class="kt">://</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">taobao</span><span class="o">/</span><span class="n">tengine</span><span class="o">.</span><span class="n">git</span>
-</span><span class='line'><span class="nf">cd</span> <span class="n">tengine</span>
-</span></code></pre></td></tr></table></div></figure>
+</aside>
 
 
-<p>然后编译之后安装</p>
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - 邵寒超 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="o">./</span><span class="n">configure</span> <span class="c1">--with-http_concat_module</span>
-</span><span class='line'><span class="nf">make</span>
-</span><span class='line'><span class="nf">sudo</span> <span class="n">make</span> <span class="n">install</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>如果不需要支持combo的话，就不需要带<code>--with-http_concat_module</code>参数。</p>
-
-<p>装完以后当然要开始配置。(<code>配置本地代理，也就是assets.daily.taobao.net等指向本地文件夹</code>)</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">sudo</span> <span class="n">vi</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">nginx</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span><span class="n">nginx</span><span class="o">.</span><span class="n">conf</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>在httpd中添加</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">server</span> <span class="p">{</span>
-</span><span class='line'>    <span class="n">listen</span>  <span class="mi">80</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">server_name</span> <span class="n">assets</span><span class="o">.</span><span class="n">daily</span><span class="o">.</span><span class="n">taobao</span><span class="o">.</span><span class="n">net</span> <span class="n">a</span><span class="o">.</span><span class="n">tbcdn</span><span class="o">.</span><span class="n">cn</span><span class="p">;</span> <span class="o">#</span><span class="err">改成自己的</span><span class="n">assets_server</span>
-</span><span class='line'>    <span class="n">concat</span> <span class="n">on</span><span class="p">;</span> <span class="o">#</span><span class="err">打开</span><span class="n">concat</span>
-</span><span class='line'>    <span class="n">root</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">pofa</span><span class="o">/</span><span class="n">work</span><span class="o">/</span><span class="n">assets</span><span class="o">/</span><span class="p">;</span> <span class="o">#</span><span class="err">本地</span><span class="n">assets</span><span class="err">路径，需要改成自己的</span><span class="n">assets_path</span>
-</span><span class='line'>    <span class="n">autoindex</span> <span class="n">on</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">error_page</span> <span class="mi">404</span> <span class="ow">=</span> <span class="o">@</span><span class="n">ucool</span><span class="p">;</span> <span class="o">#</span><span class="err">淘宝</span><span class="n">ucool</span><span class="err">，如果文件不存在，从</span><span class="n">ucool</span><span class="err">取</span>
-</span><span class='line'>    <span class="n">location</span> <span class="o">@</span><span class="n">ucool</span><span class="p">{</span>
-</span><span class='line'>        <span class="n">proxy_set_header</span> <span class="kt">Host</span> <span class="o">$</span><span class="n">http_host</span><span class="p">;</span>
-</span><span class='line'>        <span class="n">proxy_pass</span> <span class="n">http</span><span class="kt">://</span><span class="mf">10.232</span><span class="o">.</span><span class="mf">39.168</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>是不是觉得比较麻烦？启用屌丝模式！</h2>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">git</span> <span class="n">clone</span> <span class="n">git</span><span class="kt">://</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">yize</span><span class="o">/</span><span class="n">tengine</span><span class="o">.</span><span class="n">git</span>
-</span><span class='line'><span class="nf">cd</span> <span class="n">tengine</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><code>注意：请先备份自己的/usr/local/nginx/conf/nginx.conf哦！！</code></p>
-
-<p>然后sh下</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">sh</span> <span class="o">./</span><span class="n">tengine</span><span class="o">-</span><span class="n">combo</span><span class="o">.</span><span class="n">sh</span> <span class="o">#</span><span class="err">需要</span><span class="n">concat</span><span class="err">模块</span>
-</span><span class='line'><span class="nf">or</span>
-</span><span class='line'><span class="nf">sh</span> <span class="o">./</span><span class="n">tengine</span><span class="o">.</span><span class="n">sh</span> <span class="o">#</span><span class="err">不需要</span><span class="n">concat</span><span class="err">模块</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>好了之后别忘了在<code>/etc/hosts</code>中增加127.0.0.1 assets.daily.taobao.net a.tbcdn.cn</p>
-
-<p>如果不想用本地代理的话，注释掉hosts中上面这一句就行了</p>
-
-<p>enjoy it!</p>
-
-<p>源码在我的<a href="https://github.com/yize/tengine">GITHUB</a>上</p>
-]]></content>
-  </entry>
+</footer>
   
-  <entry>
-    <title type="html"><![CDATA[ubuntu下获取当前文件路径以及执行路径]]></title>
-    <link href="http://www.ithans.com/blog/2013/02/20/get-path/"/>
-    <updated>2013-02-20T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/02/20/get-path</id>
-    <content type="html"><![CDATA[<p>linux下获取当前文件路径：</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">current_dir</span><span class="o">=</span><span class="k">$(</span><span class="nb">cd</span> <span class="s2">&quot;$(dirname &quot;</span><span class="k">${</span><span class="nv">0</span><span class="k">}</span><span class="s2">&quot;)&quot;</span>; <span class="nb">pwd</span><span class="k">)</span>
-</span><span class='line'><span class="nb">echo </span>current_dir
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>linux下获取当前执行路径：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="k">$(</span><span class="nb">echo</span> <span class="nv">$0</span> | grep <span class="s1">&#39;^/&#39;</span><span class="k">)</span> <span class="o">]</span>; <span class="k">then</span>
-</span><span class='line'><span class="k">    </span><span class="nv">path</span><span class="o">=</span><span class="k">$(</span>dirname <span class="nv">$0</span><span class="k">)</span>
-</span><span class='line'><span class="k">else</span>
-</span><span class='line'><span class="k">    </span><span class="nv">path</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/<span class="k">$(</span>dirname <span class="nv">$0</span><span class="k">)</span>
-</span><span class='line'><span class="k">fi</span>
-</span><span class='line'>
-</span><span class='line'><span class="nb">echo</span> <span class="nv">$path</span>
-</span></code></pre></td></tr></table></div></figure>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ubuntu下右键在终端中打开]]></title>
-    <link href="http://www.ithans.com/blog/2013/02/19/nautilus-open-terminal/"/>
-    <updated>2013-02-19T00:00:00+08:00</updated>
-    <id>http://www.ithans.com/blog/2013/02/19/nautilus-open-terminal</id>
-    <content type="html"><![CDATA[<p>ubuntu下，在GUI中浏览文件的时候，有时候需要用到terminal打开当前目录，之前的做法是一路cd下去。。
-这未免也太浪费时间了。
-有没有快捷的方法呢？百之谷之，得此：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">nautilus</span><span class="o">-</span><span class="n">open</span><span class="o">-</span><span class="n">terminal</span>
-</span></code></pre></td></tr></table></div></figure>
+<script type="text/javascript">
+      var disqus_shortname = 'yize';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.ithans.com/blog/2013/02/25/how-browsers-work1/';
+        var disqus_url = 'http://www.ithans.com/blog/2013/02/25/how-browsers-work1/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
-<ol>
-<li>安装nautilus-open-terminal</li>
-</ol>
 
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='haskell'><span class='line'><span class="nf">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">nautilus</span><span class="o">-</span><span class="n">open</span><span class="o">-</span><span class="n">terminal</span>
-</span></code></pre></td></tr></table></div></figure>
 
 
-<ol>
-<li>重启X</li>
-</ol>
 
 
-<p><code>right Alt + Printscreen + K</code></p>
-]]></content>
-  </entry>
-  
-</feed>
+
+
+
+</body>
+</html>
