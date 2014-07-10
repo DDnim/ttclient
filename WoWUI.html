@@ -1,0 +1,19 @@
+---
+layout: page
+title: WoWUI
+header: WoWUI
+group: navigation
+---
+{% include JB/setup %}
+
+<h2>My UI</h2>
+<ul>
+{% assign pages_list = site.tags.TushuUI[1] %}
+{% include JB/pages_list %}
+</ul>
+
+<h2>UI Notes</h2>
+<ul>
+{% assign pages_list = site.tags.WoWUINote[1] %}
+{% include JB/pages_list %}
+</ul>

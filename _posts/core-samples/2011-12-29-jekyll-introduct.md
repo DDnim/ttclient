@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 tagline: "Supporting tagline"
-tags : [intro, beginner, jekyll, tutorial]
+tags : [TushuUI, WoWUINote, WoWNote, tutorial]
 ---
 {% include JB/setup %}
 
