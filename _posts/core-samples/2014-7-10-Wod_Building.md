@@ -2,7 +2,7 @@
 layout: post
 category : WoWUI
 tagline: "TushuUI"
-tags : [WoWNote]
+tags : [TushuUI, WoWUINote, WoWNote]
 ---
 {% include JB/setup %}
 
