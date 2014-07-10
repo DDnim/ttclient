@@ -1,7 +1,7 @@
 ---
 layout: post
-category : lessons
-tagline: "Supporting tagline"
+category : WoWUI
+tagline: "TushuUI"
 tags : [TushuUI, WoWUINote, WoWNote]
 ---
 {% include JB/setup %}
@@ -11,8 +11,7 @@ http://www.wowinterface.com/downloads/info22891-tDD_UnitFrame.html
 ##插件趋于稳定,插件用着有什么不适,请说,我会在将来版本修正.
 请在系统默的界面设置里面,设置血量数字以及目标的目标显示
 目标框体需要点头像的左半面，才可以调出菜单。
-没有码的同学可以暂时去下面地址回报bug:
-[http://www.wowinterface.com/downloads/info22891-tDD_UnitFrame.html]
+
 
 仿黯黑禁锢(DarkDurance)头像,WLK玩家都不会陌生的一款头像了吧,
 虽然我没有用过,但不得不说是我看到过的最漂亮的头像插件了
@@ -41,11 +40,15 @@ v1.0
 2,由于我沒有薩滿號,薩滿的圖騰條可能位置不太舒服
 
 ##下个版本会更新:
-1,各个其它职业的特殊能量条美化
-2,提供血条/能量条颜色,框体缩放的简单设置界面
-3,首領框體美化
-4,施法条美化
-5,各種框體的BUFF/DEBUFF優化
+1,各个其它职业的特殊能量条美化 
+
+2,提供血条/能量条颜色,框体缩放的简单设置界面 
+
+3,首領框體美化 
+
+4,施法条美化 
+
+5,各種框體的BUFF/DEBUFF優化 
 
 
 下载地址在附件里
