@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <m搜索eta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>每次只展开一组的折叠菜单</title>
+  <style type="text/css">
+*{ margin:0px; padding:0px; border:0px; }
+body{ font-size:12px; color:#333;text-align:center;}
+.ztbox{ background:#fff;}
+.ztbox{text-align:left;width:220px;height:auto;border:solid 1px #2173f7;margin:10px auto 0px;overflow: hidden;position: absolute;left: 10px;top: 0px; }
+.ztbox h2{font-size:14px;height:22px;line-height:22px;background:#c6d5ff;text-indent:10px;position:relative;border-top: 1px solid #fff;border-bottom: 1px solid #2173f7; font-weight:normal;cursor:pointer;}
+.ztbox h2 span{font-weight: normal;position:absolute;top:0;right:6px;}
+
+.ztbox li{border-bottom:dashed 1px #eee;}
+.ztbox {border-bottom:solid 1px #2173f7;}
+.ztlist{ list-style:disc url(none); margin:6px 10px 6px 20px;}
+</style>
+ </head>
+ <body>
+  <div id="ztbox" class="ztbox" style="left: 10px; width: 149px;">
+   <h2 id="t1" onclick="ShHi('t1','h1');">
+    标题1
+   </h2>
+   <ul class="ztlist" id="h1" style="display:none;">
+   
+<li>
+     <h3> 这里可以放很多的内容...</h3>
+    </li>
+
+<h5>
+<li>
+     这里可以放很多的内容...
+    </li>
+</h5>
+   </ul>
+   <h2 id="t2" onclick="ShHi('t2','h2');">
+    标题2
+   </h2>
+   <ul class="ztlist" id="h2" style="display:none;">
+    <li>
+     这里可以放很多的内容...
+    </li>
+   </ul>
+  </div>
+  <script type="text/javascript">
+var clickul,clickh;
+function $(d){return document.getElementById(d);}//这里声明一个$函数简化了代替了getElementById，以后$('aa')就相当于docudocument.getElementById('aa');
+function f(d){//这个方法用来获得DHTMLElement的style属性（style属性和CSS的是对应的）如果没有这样ID的DHTMLElement则返回空值
+      var t=$(d);if (t){return t.style;
+      }else{
+       return null;
+     }
+}
+function Hi(){//隐藏
+      if(clickul)clickul.style.display='none';
+}
+function Hl(){//把层的字体变回正常
+     if(clickh)clickh.style.fontWeight='normal';
+}
+function h(d){//判断这个DHTMLElement是不是隐藏的
+    var s=f(d);
+    var b=s.display;
+    if (b=='none'){
+      return true;
+    }else{
+         return false;
+    }
+}
+function ShHi(ii,jj){
+     if(h(jj)){//判断是不是隐藏
+         Hi();
+         Hl();
+         f(jj).display='block';//把jj(传入来的参数)为ID的层显示出来
+         f(ii).fontWeight='bold';//字体变为‘BOLD’
+         clickul=$(jj);clickh=$(ii);
+         }else{//如果JJ不隐藏，执行下面的
+            Hi();
+            Hl();
+            f(jj).display='none';//隐藏
+            f(ii).fontWeight='normal';//字体变回正常
+            clickul=null;clickh=null;
+         }
+}</script></body></html> 
