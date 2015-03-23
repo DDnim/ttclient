@@ -1,37 +1,51 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <m搜索eta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>每次只展开一组的折叠菜单</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Tushu_UI Update Notes</title>
   <style type="text/css">
 *{ margin:0px; padding:0px; border:0px; }
 body{ font-size:12px; color:#333;text-align:center;}
 .ztbox{ background:#fff;}
-.ztbox{text-align:left;width:220px;height:auto;border:solid 1px #2173f7;margin:10px auto 0px;overflow: hidden;position: absolute;left: 10px;top: 0px; }
+.ztbox{text-align:left;width:600px;height:auto;border:solid 1px #2173f7;margin:10px auto 0px;overflow: hidden;position: absolute;left: 10px;top: 0px; }
 .ztbox h2{font-size:14px;height:22px;line-height:22px;background:#c6d5ff;text-indent:10px;position:relative;border-top: 1px solid #fff;border-bottom: 1px solid #2173f7; font-weight:normal;cursor:pointer;}
 .ztbox h2 span{font-weight: normal;position:absolute;top:0;right:6px;}
-
+.ztbox h3{color:#ff0000}
+.ztbox h4{color:#0000ff}
 .ztbox li{border-bottom:dashed 1px #eee;}
 .ztbox {border-bottom:solid 1px #2173f7;}
 .ztlist{ list-style:disc url(none); margin:6px 10px 6px 20px;}
 </style>
  </head>
  <body>
-  <div id="ztbox" class="ztbox" style="left: 10px; width: 149px;">
+ 
+  <div id="ztbox" class="ztbox" style="left: 10px; width: 600px;">
    <h2 id="t1" onclick="ShHi('t1','h1');">
-    标题1
+    2015-3-22
    </h2>
    <ul class="ztlist" id="h1" style="display:none;">
-   
-<li>
-     <h3> 这里可以放很多的内容...</h3>
-    </li>
+      <li>发布Tushu_UI初版</li>
+	 <ul style="margin-left:10px; ">
+      <li>整合了我自己的插件</li>
+	  <ul style="margin-left:10px; ">
+	  <li>tAuras</li>
+	  <li>tAurasExtra</li>
+	  <li>tDD_UnitFrame2</li>
+	  <li>tMinimap</li>
+	  <li>tChat</li>
+	  <li>tBar</li>
+	  	  <li>tTalent</li>
+	  </ul>
+	  <li>整合了以下插件</li>
+	  <ul style="margin-left:10px; ">
+	  <li>DBM（悬槌堡模块&黑石铸造厂模块）</li>
+	  <li>ClassMonitor</li>
+	  <li>OmniCC</li>
+	  <li>MasterPlan</li>
 
-<h5>
-<li>
-     这里可以放很多的内容...
-    </li>
-</h5>
+	  <li>tBar</li>
+	  </ul>
+    </ul>
    </ul>
    <h2 id="t2" onclick="ShHi('t2','h2');">
     标题2
