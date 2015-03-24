@@ -2,30 +2,52 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Tushu_UI Update Notes</title>
+ <title>Tushu_UI Update Notes</title>
   <style type="text/css">
 *{ margin:0px; padding:0px; border:0px; }
 body{ font-size:12px; color:#333;text-align:center;}
 .ztbox{ background:#fff;}
-.ztbox{text-align:left;width:600px;height:auto;border:solid 1px #2173f7;margin:10px auto 0px;overflow: hidden;position: absolute;left: 10px;top: 0px; }
-.ztbox h2{font-size:14px;height:22px;line-height:22px;background:#c6d5ff;text-indent:10px;position:relative;border-top: 1px solid #fff;border-bottom: 1px solid #2173f7; font-weight:normal;cursor:pointer;}
+.ztbox{text-align:left;width:600px;height:auto;border:solid 0px #2173f7;margin:10px auto 0px;overflow: hidden;position: absolute;left: 10px;top: 0px; }
+.ztbox h2{
+	font-size:14px;
+	height:22px;
+	line-height:22px;
+	background:#c6d5ff;
+	text-indent:10px;
+	position:relative;
+	border-top: 0px solid #fff;
+	
+	font-weight:normal;
+	cursor:pointer;
+	background-image: url(reply_bg.jpg);
+	color: #9F0;
+}
+.ztbox ul{
+	background-image: url(reply_bg.jpg);
+	color: #FFF;
+	background-attachment: fixed;
+}
 .ztbox h2 span{font-weight: normal;position:absolute;top:0;right:6px;}
 .ztbox h3{color:#ff0000}
 .ztbox h4{color:#0000ff}
-.ztbox li{border-bottom:dashed 1px #eee;}
+.ztbox li{
+	text-indent: 1px;
+}
+
+
 .ztbox {border-bottom:solid 1px #2173f7;}
-.ztlist{ list-style:disc url(none); margin:6px 10px 6px 20px;}
-</style>
+.ztlist{ list-style:disc url(none);list-style-position: inside; margin:0px 0px 1px 0px;}
+  </style>
  </head>
  <body>
  
-  <div id="ztbox" class="ztbox" style="left: 10px; width: 600px;">
+  <div id="ztbox" class="ztbox" style="left: 4px; width: 600px;">
    <h2 id="t1" onclick="ShHi('t1','h1');">
     2015-3-22
    </h2>
-   <ul class="ztlist" id="h1" style="display:none;">
-      <li>发布Tushu_UI初版</li>
-	 <ul style="margin-left:10px; ">
+   <ul class="ztlist" id="h1" style="text-indent:2em;">
+      <li style="display:none;text-indent:2em;">发布Tushu_UI初版</li>
+	 <ul class="ztlist" id="h1" style="margin-left:10px;">
       <li>整合了我自己的插件</li>
 	  <ul style="margin-left:10px; ">
 	  <li>tAuras</li>
@@ -37,7 +59,7 @@ body{ font-size:12px; color:#333;text-align:center;}
 	  	  <li>tTalent</li>
 	  </ul>
 	  <li>整合了以下插件</li>
-	  <ul style="margin-left:10px; ">
+	  <ul class="ztlist" id="h1" style="margin-left:10px; ">
 	  <li>DBM（悬槌堡模块&黑石铸造厂模块）</li>
 	  <li>ClassMonitor</li>
 	  <li>OmniCC</li>
@@ -56,7 +78,7 @@ body{ font-size:12px; color:#333;text-align:center;}
     </li>
    </ul>
   </div>
-  <script type="text/javascript">
+<script type="text/javascript">
 var clickul,clickh;
 function $(d){return document.getElementById(d);}//这里声明一个$函数简化了代替了getElementById，以后$('aa')就相当于docudocument.getElementById('aa');
 function f(d){//这个方法用来获得DHTMLElement的style属性（style属性和CSS的是对应的）如果没有这样ID的DHTMLElement则返回空值
