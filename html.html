@@ -45,7 +45,7 @@ body{ font-size:12px; color:#333;text-align:center;}
    <h2 id="t1" onclick="ShHi('t1','h1');">
     2015-3-22
    </h2>
-   <ul class="ztlist" id="h1" style="text-indent:2em;">
+   <ul class="ztlist" id="h1" style="text-indent:2em; display:list-item;">
       <li style="display:none;text-indent:2em;">发布Tushu_UI初版</li>
 	 <ul class="ztlist" id="h1" style="margin-left:10px;">
       <li>整合了我自己的插件</li>
@@ -64,36 +64,37 @@ body{ font-size:12px; color:#333;text-align:center;}
 	  <li>ClassMonitor</li>
 	  <li>OmniCC</li>
 	  <li>MasterPlan</li>
-
-	  <li>tBar</li>
 	  </ul>
     </ul>
    </ul>
    <h2 id="t2" onclick="ShHi('t2','h2');">
-    标题2
+    计划加入：
    </h2>
    <ul class="ztlist" id="h2" style="display:none;">
-    <li>
-     这里可以放很多的内容...
-    </li>
+    <li>Weak Auras Montage</li>
+    <li>ClassMonitor更换为tCombatMoniter</li>
+    <li>tChat更换为tHotkey</li>
+    <li>opie</li>
+    <li>tCastBar</li>
+    <li>增加tAura 的各个职业的专有模块</li>
    </ul>
   </div>
 <script type="text/javascript">
 var clickul,clickh;
-function $(d){return document.getElementById(d);}//这里声明一个$函数简化了代替了getElementById，以后$('aa')就相当于docudocument.getElementById('aa');
-function f(d){//这个方法用来获得DHTMLElement的style属性（style属性和CSS的是对应的）如果没有这样ID的DHTMLElement则返回空值
+function $(d){return document.getElementById(d);}
+function f(d){
       var t=$(d);if (t){return t.style;
       }else{
        return null;
      }
 }
-function Hi(){//隐藏
+function Hi(){
       if(clickul)clickul.style.display='none';
 }
-function Hl(){//把层的字体变回正常
+function Hl(){
      if(clickh)clickh.style.fontWeight='normal';
 }
-function h(d){//判断这个DHTMLElement是不是隐藏的
+function h(d){
     var s=f(d);
     var b=s.display;
     if (b=='none'){
@@ -103,17 +104,17 @@ function h(d){//判断这个DHTMLElement是不是隐藏的
     }
 }
 function ShHi(ii,jj){
-     if(h(jj)){//判断是不是隐藏
+     if(h(jj)){
          Hi();
          Hl();
-         f(jj).display='block';//把jj(传入来的参数)为ID的层显示出来
-         f(ii).fontWeight='bold';//字体变为‘BOLD’
+         f(jj).display='block';
+         f(ii).fontWeight='bold';
          clickul=$(jj);clickh=$(ii);
-         }else{//如果JJ不隐藏，执行下面的
+         }else{
             Hi();
             Hl();
-            f(jj).display='none';//隐藏
-            f(ii).fontWeight='normal';//字体变回正常
+            f(jj).display='none';
+            f(ii).fontWeight='normal';
             clickul=null;clickh=null;
          }
 }</script></body></html> 
